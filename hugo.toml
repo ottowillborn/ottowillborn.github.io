@@ -1,4 +1,4 @@
-baseURL = 'https://ottowillborn.github.io/PortfolioSite'
+baseURL = 'https://ottowillborn.github.io'
 languageCode = 'en-us'
 title = 'Minimal Black Theme'
 theme = "minimal-black"
