@@ -4,4 +4,51 @@
  What’s under the hood
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;The system is split into two main parts that work together to stream high-quality video from the coast to my phone or desktop:&lt;/p&gt;</description></item><item><title>About Me</title><link>https://ottowillborn.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ottowillborn.github.io/about/</guid><description>&lt;p&gt;I’m Otto, a final-year Software Engineering student at UVic who loves turning abstract ideas into tangible, functional systems. Whether it’s microcontrollers, full-stack applications, or custom hardware, I thrive on the process of meshing moving parts together. When I’m not debugging deep into the night, you’ll find me in the water. I’m a dedicated surfer and former UVic Surf Club executive, and I’m always looking for the next challenge, whether it’s a tricky code bug or a cold day in Tofino.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;The system is split into two main parts that work together to stream high-quality video from the coast to my phone or desktop:&lt;/p&gt;</description></item><item><title>UVic Room Booking System</title><link>https://ottowillborn.github.io/projects/uvic-booking-system/</link><pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate><guid>https://ottowillborn.github.io/projects/uvic-booking-system/</guid><description>&lt;p&gt;I was the developer in charge of the frontend for this system. We built it from square one with a set of requirements, and were encouraged to use LLMs for development.&lt;/p&gt;
+&lt;h3 id="the-big-requirement"&gt;
+ &lt;a href="#the-big-requirement" class="md-heading-anchor"&gt;
+ The Big Requirement
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Concurrency &amp;amp; Atomicity:&lt;/strong&gt; Designed and implemented a robust scheduling logic to handle high-concurrency requests. By utilizing database transactions (ACID compliance), the system prevents race conditions, ensuring that no two users can book the same room at the same time, even when simultaneous requests are received.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Engineered the system to be environment-agnostic using Docker and Docker Compose. This ensures 1:1 parity between development, testing, and production environments, eliminating &amp;ldquo;it works on my machine&amp;rdquo; issues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="the-app"&gt;
+ &lt;a href="#the-app" class="md-heading-anchor"&gt;
+ The App
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Frontend Architecture:&lt;/strong&gt; Developed a responsive, interactive calendar interface using TypeScript. Managed complex client-side state to handle room availability filtering, time-slot selection, and real-time feedback.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integration Flow:&lt;/strong&gt; Created a seamless UX where the frontend communicates with the backend API to validate availability before committing a booking, ensuring the UI always reflects the current state of the database.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="mcp-model-context-protocol-integration"&gt;
+ &lt;a href="#mcp-model-context-protocol-integration" class="md-heading-anchor"&gt;
+ MCP (Model Context Protocol) Integration
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AI-Native Workflow:&lt;/strong&gt; Implemented an MCP server to bridge the gap between the booking system and Claude Desktop. This allows users to perform complex booking actions (e.g., &amp;ldquo;Find and book a room for 3 people on Tuesday at 2 PM&amp;rdquo;) using natural language, significantly lowering the barrier to entry for administrative tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="testing--documentation"&gt;
+ &lt;a href="#testing--documentation" class="md-heading-anchor"&gt;
+ Testing &amp;amp; Documentation
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reliability:&lt;/strong&gt; Established a CI/CD-ready testing suite. Used &lt;code&gt;npm test&lt;/code&gt; for unit testing critical API endpoints to ensure logic stability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance:&lt;/strong&gt; Utilized &lt;strong&gt;k6&lt;/strong&gt; to conduct load testing, simulating peak traffic hours at the university to identify potential bottlenecks in database queries and API response times.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Governance:&lt;/strong&gt; Enforced high engineering standards by documenting the RESTful API via Swagger (OpenAPI) and maintaining Architecture Decision Records (ADRs) to track the rationale behind key technical choices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="issues-faced"&gt;
+ &lt;a href="#issues-faced" class="md-heading-anchor"&gt;
+ Issues Faced
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Handling Race Conditions:&lt;/strong&gt; Initially, we encountered race conditions where two users could select the same time slot simultaneously. We resolved this by implementing database-level transaction locking to ensure atomicity during the booking commit process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State Synchronization:&lt;/strong&gt; Keeping the frontend calendar state in sync with the backend database during rapid user input required a custom event-bus implementation. We optimized this by using a standardized API response structure that triggered immediate UI re-renders.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker Networking:&lt;/strong&gt; During the initial setup of the microservices, we struggled with container-to-container communication. We resolved this by defining a custom virtual bridge network in our &lt;code&gt;docker-compose.yml&lt;/code&gt; file, allowing services to communicate via internal DNS names.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MCP Protocol Complexity:&lt;/strong&gt; Integrating the MCP server required mapping our existing API routes to natural language intents. The primary challenge was structuring our API documentation in a way that the Claude model could interpret precisely, which we solved by iterating on our Swagger/OpenAPI schemas.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>About Me</title><link>https://ottowillborn.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ottowillborn.github.io/about/</guid><description>&lt;p&gt;I’m Otto, a final-year Software Engineering student at UVic who loves turning abstract ideas into tangible, functional systems. Whether it’s microcontrollers, full-stack applications, or custom hardware, I thrive on the process of meshing moving parts together. When I’m not debugging deep into the night, you’ll find me in the water. I’m a dedicated surfer and former UVic Surf Club executive, and I’m always looking for the next challenge, whether it’s a tricky code bug or a cold day in Tofino.&lt;/p&gt;</description></item></channel></rss>
