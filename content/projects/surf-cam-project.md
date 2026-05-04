@@ -31,10 +31,10 @@ It's most definitely still a work in progress... Theres a few problems which im 
 
 ## Gallery
 {{< gallery >}}
-![Alt text](/images/camassembly.jpg)
-![Alt text](/images/camdemo.png)
-![Alt text](/images/socket.jpg)
-![Alt text](/images/soc.jpg)
-![Alt text](/images/IMG_1731.jpeg)
-![Alt text](/images/IMG_1732.jpeg)
+![Alt text](/static/images/camassembly.jpg)
+![Alt text](/static/images/camdemo.png)
+![Alt text](/static/images/socket.jpg)
+![Alt text](/static/images/soc.jpg)
+![Alt text](/static/images/IMG_1731.jpeg)
+![Alt text](/static/images/IMG_1732.jpeg)
 {{< /gallery >}}
