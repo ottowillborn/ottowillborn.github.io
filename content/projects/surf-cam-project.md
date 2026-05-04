@@ -2,8 +2,8 @@
 title = "Surf Camera"
 date = "2025-12-01"
 description = "Remote surf camera for checking real-time conditions"
-github = "https://github.com/ottowillborn/surf-cam-project"
-tags = ["react", "typescript", "python"]
+repo = "https://github.com/ottowillborn/surf-cam-project"
+stack = ["react", "typescript", "python", "pi"]
 featured = true
 +++
 
