@@ -3,6 +3,7 @@ title = "Surf Camera"
 date = "2025-12-01"
 description = "Remote surf camera for checking real-time conditions"
 repo = "https://github.com/ottowillborn/surf-cam-project"
+demo = "https://drive.google.com/file/d/1bP89tZNPIIb6sGZLYniAG5QkJzFCBAgP/view?usp=sharing"
 stack = ["react", "typescript", "python", "pi"]
 featured = true
 +++
