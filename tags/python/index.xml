@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Otto Willborn</title><link>https://ottowillborn.github.io/tags/python/</link><description>Recent content in Python on Otto Willborn</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ottowillborn.github.io/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Surf Camera</title><link>https://ottowillborn.github.io/projects/surf-cam-project/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>https://ottowillborn.github.io/projects/surf-cam-project/</guid><description>&lt;p&gt;I built this project to solve a simple problem: I wanted to check the surf conditions at my local break without driving all the way there. It turned into a deep dive into streaming, networking, and off-grid power management. For the code side that is&amp;hellip; I got to learn a ton about 3D design and hardware management as well!&lt;/p&gt;
+&lt;h2 id="whats-under-the-hood"&gt;
+ &lt;a href="#whats-under-the-hood" class="md-heading-anchor"&gt;
+ What’s under the hood
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The system is split into two main parts that work together to stream high-quality video from the coast to my phone or desktop:&lt;/p&gt;</description></item></channel></rss>
