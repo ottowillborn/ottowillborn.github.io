@@ -90,6 +90,22 @@ theme = "minimal-black"
       label = "Azure"
       icon = "devicon-azure-plain" #
 
+    [[params.home.techReverse]]
+      label = ""
+      icon = "devicon-c-plain" #
+
+    [[params.home.techReverse]]
+      label = "VueJS"
+      icon = "devicon-vuejs-plain" #
+
+    [[params.home.techReverse]]
+      label = "Swift"
+      icon = "devicon-swift-plain" #
+
+    [[params.home.techReverse]]
+      label = "Pi"
+      icon = "devicon-raspberrypi-plain" #
+
   # About Page Alternative Layout Configuration
   [params.about.alt]
     [[params.about.alt.stats]]
