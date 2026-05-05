@@ -1,10 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Otto Willborn</title><link>https://ottowillborn.github.io/projects/</link><description>Recent content in Projects on Otto Willborn</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ottowillborn.github.io/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Surf Camera</title><link>https://ottowillborn.github.io/projects/surf-cam-project/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>https://ottowillborn.github.io/projects/surf-cam-project/</guid><description>&lt;p&gt;I built this project to solve a simple problem: I wanted to check the surf conditions at my local break without driving all the way there. It turned into a deep dive into streaming, networking, and off-grid power management. For the code side that is&amp;hellip; I got to learn a ton about 3D design and hardware management as well!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Otto Willborn</title><link>https://ottowillborn.github.io/projects/</link><description>Recent content in Projects on Otto Willborn</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ottowillborn.github.io/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Deadline Driven Scheduler</title><link>https://ottowillborn.github.io/projects/1_dds/</link><pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate><guid>https://ottowillborn.github.io/projects/1_dds/</guid><description>&lt;h2 id="deadline-driven-scheduler-dds-system"&gt;
+ &lt;a href="#deadline-driven-scheduler-dds-system" class="md-heading-anchor"&gt;
+ Deadline-Driven Scheduler (DDS) System
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Built a comprehensive real-time scheduling system for STM32 microcontrollers using FreeRTOS. The project involved implementing an Earliest Deadline First (EDF) scheduling algorithm to dynamically manage, preempt, and monitor periodic, time-sensitive tasks.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="technical-highlights"&gt;
+ &lt;a href="#technical-highlights" class="md-heading-anchor"&gt;
+ Technical Highlights
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Real-Time Scheduling:&lt;/strong&gt; Implemented a preemptive EDF scheduler to ensure tasks with the most urgent absolute deadlines receive CPU priority.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inter-Task Communication:&lt;/strong&gt; Engineered a robust IPC architecture using FreeRTOS queues to handle synchronization between task generators, the scheduler, and monitor components.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory &amp;amp; Resource Management:&lt;/strong&gt; Managed dynamic task creation/deletion, preventing memory leaks through rigorous cleanup of task handles within the scheduler loop.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preemption Logic:&lt;/strong&gt; Designed a priority-manipulation mechanism that allows the scheduler to preempt running tasks mid-execution, recording remaining runtime for resumption.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Profiling:&lt;/strong&gt; Analyzed system performance under varying workloads, identifying the impact of processing jitters on scheduling accuracy and the necessity of &amp;ldquo;slack time&amp;rdquo; in real-time systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id="implementation-details"&gt;
+ &lt;a href="#implementation-details" class="md-heading-anchor"&gt;
+ Implementation Details
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The system architecture was modular, separating generation, scheduling, and monitoring into distinct, high-performance components:&lt;/p&gt;</description></item><item><title>Surf Camera</title><link>https://ottowillborn.github.io/projects/3_surf-cam-project/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>https://ottowillborn.github.io/projects/3_surf-cam-project/</guid><description>&lt;p&gt;I built this project to solve a simple problem: I wanted to check the surf conditions at my local break without driving all the way there. It turned into a deep dive into streaming, networking, and off-grid power management. For the code side that is&amp;hellip; I got to learn a ton about 3D design and hardware management as well!&lt;/p&gt;
 &lt;h2 id="whats-under-the-hood"&gt;
  &lt;a href="#whats-under-the-hood" class="md-heading-anchor"&gt;
  What’s under the hood
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;The system is split into two main parts that work together to stream high-quality video from the coast to my phone or desktop:&lt;/p&gt;</description></item><item><title>UVic Room Booking System</title><link>https://ottowillborn.github.io/projects/uvic-booking-system/</link><pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate><guid>https://ottowillborn.github.io/projects/uvic-booking-system/</guid><description>&lt;p&gt;I was the developer in charge of the frontend for this system. We built it from square one with a set of requirements, and were encouraged to use LLMs for development.&lt;/p&gt;
+&lt;p&gt;The system is split into two main parts that work together to stream high-quality video from the coast to my phone or desktop:&lt;/p&gt;</description></item><item><title>UVic Room Booking System</title><link>https://ottowillborn.github.io/projects/2_uvic-booking-system/</link><pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate><guid>https://ottowillborn.github.io/projects/2_uvic-booking-system/</guid><description>&lt;p&gt;I was the developer in charge of the frontend for this system. We built it from square one with a set of requirements, and were encouraged to use LLMs for development.&lt;/p&gt;
 &lt;h3 id="the-big-requirement"&gt;
  &lt;a href="#the-big-requirement" class="md-heading-anchor"&gt;
  The Big Requirement
