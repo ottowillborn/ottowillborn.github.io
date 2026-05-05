@@ -19,7 +19,7 @@ theme = "minimal-black"
   description = "Software Engineering student at the University of Victoria with a focus on Embedded Systems, Software Architechture, and Full-Stack Development." #
 
   # Favicon - Place your favicon files in /static/ directory
-  favicon = "icons/favicon.svg"
+  favicon = "icons/favicon.ico"
   appleTouchIcon = "apple-touch-icon.png"
 
   # Logo (optional)

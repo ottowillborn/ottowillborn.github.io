@@ -24,7 +24,7 @@ theme = "minimal-black"
   appleTouchIcon = "apple-touch-icon.png"
 
   # Logo (optional)
-  logo = "images/logo.png"
+  logo = profilepicture.jpg
 
   # Project and blog intro text
   projectsIntro = "Selected projects to display list." # Can be empty

@@ -32,9 +32,14 @@
 <article class="card card-pad card-home card-home--project group">
   <a href="{{ $p.RelPermalink }}" class="card-home-body">
     <div class="card-home-header">
-      <div class="card-home-icon">
-        <i class="{{ $icon }}"></i>
-      </div>
+      <div class="card-home-icon card-home-icon--post">
+  {{/* Check if the icon string looks like a file path (contains a slash or extension) */}}
+  {{ if or (strings.Contains $icon "/") (strings.Contains $icon ".") }}
+    <img src="{{ $icon | relURL }}" alt="Icon" class="h-full w-full object-contain">
+  {{ else }}
+    <i class="{{ $icon }}"></i>
+  {{ end }}
+</div>
 
       <div class="min-w-0">
         <div class="inline-flex items-center gap-1">
